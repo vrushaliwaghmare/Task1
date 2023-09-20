@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>OTP request</title>
+</head>
+<body>
+    <section id="otp">
+        <h3>OTP</h3>
+        <div class="prompt">
+            Enter your one-time password
+        </div>
+        <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+            <input type="text" class="otpInput" maxlength="1">
+            <input type="text" class="otpInput" maxlength="1">
+            <input type="text" class="otpInput" maxlength="1">
+            <input type="text" class="otpInput" maxlength="1">
+
+    <script>
+        function insertOTP() {
+            // Get all OTP input elements with class "otpInput"
+            var otpInputs = document.getElementsByClassName('otpInput');
+            
+            // Replace these values with the OTP digits you want to insert
+            var otpDigits = ['1', '2', '3', '4'];
+
+            // Loop through the OTP input fields and insert corresponding digits
+            for (var i = 0; i < otpInputs.length; i++) {
+                otpInputs[i].value = otpDigits[i] || '';
+            }
+        }
+    </script>
+            <br>
+        </form>
+        
+        <button><a style="text-decoration: none;" href="index.html">Submit</a></button>
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <style>
+        body{
+            background-color:rgb(30,30,40);
+        }
+        form{ 
+            max-width:420px; margin:50px auto; 
+        }
+        h1{
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+            font-family: Helvetica, Arial, sans-serif;
+
+        }
+        input{
+            resize: vertical;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight:500;
+            font-size: 18px;
+            border-radius: 5px;
+            line-height: 22px;
+            background-color: transparent;
+            border:2px solid #CC6666;
+            transition: all 0.3s;
+            padding: 13px;
+            margin-bottom: 15px;
+            width:100%;
+            box-sizing: border-box;
+            outline:0;
+        }
+        textarea{
+            resize: vertical;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight:500;
+            font-size: 18px;
+            border-radius: 5px;
+            line-height: 22px;
+            background-color: transparent;
+            border:2px solid #CC6666;
+            transition: all 0.3s;
+            padding: 13px;
+            margin-bottom: 15px;
+            width:100%;
+            box-sizing: border-box;
+            outline:0;
+        }
+        [type="submit"]{
+           background:  #CC6666;
+           cursor: pointer;
+        }
+        [type="submit"]:hover { background:#CC4949;
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <form action="index.html">
+            <h1>Get in touch with us</h1>
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <textarea type="text" id="response" name="response" placeholder="Write your response..."></textarea>
+            <input type="submit" value="SUBMIT"/>
+        </form>
+    </div>
+</body>
+</html>
